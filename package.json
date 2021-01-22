@@ -1,0 +1,22 @@
+{
+  "name": "@macrostrat/image-tagger-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@macrostrat/larkin": "git+https://github.com/UW-Macrostrat/larkin.git",
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pg-native": "^3.0.0",
+    "pg-promise": "^8.5.5",
+    "tsparser": "^1.0.2",
+    "uuid": "^3.3.2"
+  }
+}
