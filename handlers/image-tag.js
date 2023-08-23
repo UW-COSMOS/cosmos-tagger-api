@@ -59,8 +59,12 @@ async function handlePost(req, res, next, plugins) {
   // Validate the input
   let incoming = req.body
 
+
   if (!incoming.tagger && !incoming.validator) {
-    return res.error(req, res, next, 'Missing a "tagger" or "validator" property', 400)
+      incoming.tagger = "COSMOS"
+//      console.log("tagger is " + incoming.tagger)
+//      console.log("validator is " + incoming.validator)
+//    return res.error(req, res, next, 'Missing a "tagger" or "validator" property', 400)
   }
   if (!incoming.tags) {
     return res.error(req, res, next, 'Missing "tags" property', 400)
